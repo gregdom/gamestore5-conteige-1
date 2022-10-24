@@ -45,7 +45,7 @@ class AdminController {
       res.json("Erro");
     } else {
       console.log("Desenvolvedora excluída!");
-      return res.redirect("https://fangames.space:3000/admin/marketplaces");
+      return res.redirect("https://fangames.space/admin/marketplaces");
     }
   }
 
@@ -76,7 +76,7 @@ class AdminController {
       res.json("Erro");
     } else {
       console.log("Cliente apagado com sucesso!");
-      return res.redirect("https://fangames.space:3000/admin/clientes");
+      return res.redirect("https://fangames.space/admin/clientes");
     }
   }
 }
