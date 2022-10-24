@@ -10,10 +10,10 @@ class UserController {
     const user = await service.execute(name, email, password, cpf);
 
     user === null
-      ? res.render("./store/login/register.ejs", {
+      ? res.render("./store/pages/register.ejs", {
           err: "Não é possível usar este email!",
         })
-      : res.render("./store/login/register.ejs");
+      : res.render("./store/pages/register.ejs");
   }
 
   async read(req, res){
