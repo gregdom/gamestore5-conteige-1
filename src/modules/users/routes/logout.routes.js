@@ -8,7 +8,7 @@ logoutRouter.use(isAuthenticated);
 logoutRouter.get("/", (req, res) => {
   res.clearCookie("jwt");
   console.log("Você saiu da conta!");
-  res.redirect("https://fangames.space:3000/login");
+  res.redirect("https://fangames.space/login");
 });
 
 export default logoutRouter;
