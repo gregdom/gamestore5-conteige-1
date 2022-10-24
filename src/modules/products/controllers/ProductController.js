@@ -144,7 +144,7 @@ class MarketController {
     // console.log(id, idprod, objDetails);
     const service = new UpdateProductService();
     await service.execute(id, idprod, objDetails);
-    return res.redirect("https://fangames.space:3000/marketplaces/products");
+    return res.redirect("https://fangames.space/marketplaces/products");
   }
 
   /******************** DELETAR PRODUTO ******************/
@@ -155,7 +155,7 @@ class MarketController {
     console.log("TESTES", iduser, idprod);
     const service = new DeleteProductService();
     const product = await service.execute(iduser, idprod);
-    return res.redirect("https://fangames.space:3000/marketplaces/products");
+    return res.redirect("https://fangames.space/marketplaces/products");
   }
 
   async market(req, res) {
