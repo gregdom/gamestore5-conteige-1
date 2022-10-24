@@ -19,14 +19,14 @@ class SessionController {
         maxAge: 86400000,
       });
       console.log("DIRETO PARA ADMIM");
-      return res.redirect("https://fangames.space:3000/admin");
+      return res.redirect("https://fangames.space/admin");
     } else {
       res.cookie("jwt", logged.token, {
         httpOnly: true,
         maxAge: 86400000,
       });
       console.log("DIRETO PARA USER");
-      return res.redirect("https://fangames.space:3000/profile");
+      return res.redirect("https://fangames.space/profile");
     }
   }
 
