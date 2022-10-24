@@ -32,7 +32,7 @@ class ProfileController {
     if (market === null) {
       res.render("./users/pages/marketplaces.ejs");
     } else {
-      res.redirect("https://fangames.space:3000/marketplaces/products/register");
+      res.redirect("https://fangames.space/marketplaces/products/register");
     }
 
   }
