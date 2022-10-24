@@ -91,14 +91,14 @@ class StoreController {
         maxAge: 86400000,
       });
       console.log("DIRETO PARA ADMIM CART");
-      return res.redirect("https://fangames.space:3000/admin/cart");
+      return res.redirect("https://fangames.space/admin/cart");
     } else {
       res.cookie("jwt", logged.token, {
         httpOnly: true,
         maxAge: 86400000,
       });
       console.log("DIRETO PARA USER CART");
-      return res.redirect("https://fangames.space:3000/profile/cart");
+      return res.redirect("https://fangames.space/profile/cart");
     }
   }
 }
