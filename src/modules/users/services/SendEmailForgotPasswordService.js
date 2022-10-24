@@ -42,7 +42,7 @@ class SendEmailForgotPasswordService {
         file: forgotpasswordtemplate,
         variables: {
           name: user.name,
-          link: `https://fangames.space:3000/resetpassword?token=${token}`,
+          link: `https://fangames.space/resetpassword?token=${token}`,
         },
       },
     });
