@@ -6,7 +6,7 @@ function isAuthenticated(req, res, next) {
   const authHeader = req.cookies.jwt;
   console.log("AQUI AUTHHEADER", authHeader);
   if (!authHeader) {
-    return res.redirect("https://fangames.space:3000/login");
+    return res.redirect("https://fangames.space/login");
   }
 
   const token = authHeader;
