@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="chrome://branding/content/icon32.png" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/admdashboard.css">
+  <title>GameStore</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="dtc">
+      <%- include("../partials/inHeader.ejs"); -%>
+    </header>
+
+    <div class="block">
+      <h1>Dashboard</h1>
+
+      <div class="cont">
+        <div class="dash dash1">
+          <h2>Marketplaces cadastrados</h2>
+          <p>
+            <%= data["marketTotal"][0].totaldev %>
+          </p>
+        </div>
+
+        <div class="dash dash2">
+          <h2>Clientes cadastrados</h2>
+          <p>
+            <%= data["clientsTotal"][0].totalclients %>
+          </p>
+        </div>
+
+        <div class="dash dash3">
+          <h2>Vendas realizadas</h2>
+          <p>
+            <%= data["ordersTotal"][0].totalorders %>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="dtc">
+    <%- include("../../store/partials/inFooter.ejs"); -%>
+  </footer>
+
+  <div class="modal"></div>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/responsive-menu.js"></script>
+  <script src="/js/resize.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/swiperpersonal.js"></script>
+
+  <script>
+
+    if (localStorage.meuArr) {
+      arr = JSON.parse(localStorage.getItem("meuArr"));
+      let numItens = arr.length;
+      let carticon = document.querySelector(".carticon span").innerHTML = numItens;
+      console.log("SPAN", carticon);
+    }
+
+  </script>
+</body>
+
+</html>
