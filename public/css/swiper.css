@@ -1,0 +1,23 @@
+.mySwiperHero {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiperHero .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.mySwiperHero .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.mySwiperHero .swiper-pagination-bullet {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.mySwiperHero .swiper-pagination-bullet-active {
+    background: #fff;
+}
