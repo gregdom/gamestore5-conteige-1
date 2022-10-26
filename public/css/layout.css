@@ -1053,7 +1053,7 @@ footer .inFooter ul li a:last-child {
         color: #fff;
         line-height: 17px;
         text-align: center;
-        background-color: #008d00;
+        /* background-color: #008d00; */
         border-radius: 50%;
     }
 
