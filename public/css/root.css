@@ -1,0 +1,41 @@
+:root {
+    /* First 212429 */
+    /* Second 2B2E35 */
+
+    /* Background */
+    --bg-0: #191D20;
+    --bg-1: #26272B;
+    --bg-2: #00a000;
+    --bg-a: #0000009a;
+
+
+    /* Colors */
+    --c-0: #FAFAFC;
+    --c-1: #AAAAAF;
+    --c-2: #64676D;
+    --c-3: #00ff00;
+
+
+    /* Buttons */
+    --btn-0: #107C10;
+
+
+    /* Border Radius */
+    --rad-0: 10px;
+    --rad-1: 5px;
+
+
+    /* Text Size */
+    --txt-0: 14px;
+    --txt-1: 11px;
+    --txt-2: 15px;
+
+
+    /* Header Size */
+    --h2: 20px;
+
+
+    /* COMPONENTS */
+    --components: #3b3b3b;
+
+}

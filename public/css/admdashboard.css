@@ -1,0 +1,79 @@
+/** MOBILE FIRST **/
+.block {
+  width: 95%;
+  height: auto;
+  margin: 50px auto;
+  padding: 16px;
+  color: var(--c-1);
+  background-color: var(--bg-1);
+}
+
+.block h1 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.block .dash {
+  width: 100%;
+  height: auto;
+  margin: 16px 0;
+  padding: 16px;
+  font-size: 14px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: rgb(18, 18, 20);
+}
+
+.block .dash h2 {
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.block .dash p {
+  font-size: 25px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .block {
+    width: 85%;
+  }
+
+  .block .cont{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .block h1 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 16px 16px 0 16px;
+  }
+  
+  .block .dash {
+    width: 30%;
+    height: auto;
+    margin: 16px 0;
+    padding: 32px 16px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgb(18, 18, 20);
+  }
+  
+  .block .dash h2 {
+    margin-bottom: 16px;
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  .block .dash p {
+    font-size: 40px;
+    text-align: center;
+  }
+}

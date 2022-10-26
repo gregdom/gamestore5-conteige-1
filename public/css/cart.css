@@ -1,0 +1,103 @@
+.cartBlock {
+  width: 95%;
+  height: auto;
+  margin: 50px auto;
+  padding: 16px;
+  background-color: var(--bg-1);
+}
+
+.cartBlock h1 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--c-1);
+}
+
+.cartBlock .cartShowList ul {
+  list-style: none;
+}
+
+.cartBlock .cartShowList ul li {
+  width: 100%;
+  height: auto;
+  margin: 16px 0;
+  border-radius: 5px;
+  background: rgb(18, 18, 20);
+  font-size: 14px;
+  color: var(--c-1);
+  padding: 8px;
+  position: relative;
+}
+
+.cartBlock .cartShowList ul li h2 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.cartBlock .cartShowList ul li span {
+  width: 18px;
+  height: 18px;
+  top: -5px;
+  right: -5px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 16px;
+  position: absolute;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 50px;
+}
+
+.cartBlock aside .tot {
+  font-size: 25px;
+  color: var(--c-1);
+}
+
+.cartBlock aside button {
+  width: 100%;
+  padding: 10px 24px;
+  margin: 16px auto;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--txt-0);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 0;
+  border-left-color: currentcolor;
+  border-left-style: none;
+  border-left-width: 0px;
+  border-left: 3px solid #00ff00;
+  color: #fff;
+  background-color: #00a000;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px){
+  .cartBlock {
+    width: 65%;
+    height: auto;
+    margin: 50px auto;
+    padding: 16px;
+    background-color: var(--bg-1);
+  }
+  
+  .cartBlock h1 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--c-1);
+  }
+}
+
+@media (min-width: 992px){
+  .cartBlock {
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+    padding: 16px;
+    background-color: var(--bg-1);
+  }
+}

@@ -1,0 +1,71 @@
+.mySwiperGallery {
+    width: auto !important;
+    margin-bottom: 16px;
+    background-color: #FF0033;
+}
+
+.mySwiperGallery .swiper-slide {
+    width: 250px;
+    height: auto;
+    padding-bottom: 32px;
+    font-size: 14px;
+
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+}
+
+/* .swiper-slide > div{
+    display: normal;
+} */
+
+.mySwiperGallery .swiper-slide .main-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.mySwiperGallery .swiper-slide .info {
+    display: flex;
+    padding-top: 16px;
+    text-align: left;
+}
+
+.mySwiperGallery .swiper-slide .info p.title {
+    color: var(--text-second-color);
+}
+
+.mySwiperGallery .swiper-slide .info p.type-release {
+    color: var(--text-second-color);
+}
+
+.mySwiperGallery .swiper-slide .info p.price {
+    color: var(--text-second-color);
+}
+
+.mySwiperGallery .swiper-slide .info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.mySwiperGallery .swiper-pagination-bullet {
+    background-color: #7e7e7e;
+}
+
+.mySwiperGallery .swiper-pagination-bullet-active {
+    background: #7e7e7e;
+}
