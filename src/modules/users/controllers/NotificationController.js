@@ -6,6 +6,9 @@ class NotificationController {
     console.log("Página de notificação IPN");
     console.log(req.query);
 
+    let id = req.query.id;
+    console.log("ID DA QUERY", id);
+
     setTimeout(() => {
       let filtro = {
         "order.id": id,
@@ -14,7 +17,7 @@ class NotificationController {
         .search({
           qs: filtro,
         })
-        .then((data) => {
+        .then(async (data) => {
           let pagamento = data.body.results[0];
 
           if (pagamento != undefined) {
@@ -25,7 +28,8 @@ class NotificationController {
 
             if (pagamento.status === "approved") {
               const service = new NotificationService();
-              const verifying = service.execute(extref);
+              const verifying = await service.execute(extref);
+              console.log("VERIFYING", verifying);
             }
 
           } else {
