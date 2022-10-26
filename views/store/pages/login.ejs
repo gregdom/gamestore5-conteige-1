@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/generalforms.css">
+  <link rel="stylesheet" href="/css/valid.css">
   <title>GameStore</title>
 </head>
 
@@ -24,17 +25,27 @@
 
     <div class="loginform">
       <div class="formBlock">
-        <form method="POST">
+        <form method="POST" id="form">
           <h1>Entre na Gamestore</h1>
-          <div>
+
+          <div class="form-control">
             <label>Email</label>
             <input type="text" name="email" id="user_email" /><br />
+            <i class="img-success"><img src="/img/success-icon.svg" alt=""></i>
+            <i class="img-error"><img src="/img/error-icon.svg" alt=""></i>
+            <small>Error Message</small>
           </div>
-          <div>
+
+          <div class="form-control">
             <label>Senha</label>
             <input type="password" name="password" id="user_password" /><br />
+            <i class="img-success"><img src="/img/success-icon.svg" alt=""></i>
+            <i class="img-error"><img src="/img/error-icon.svg" alt=""></i>
+            <small>Error Message</small>
           </div>
+
           <button class="btnsub">Entrar</button>
+          
         </form>
       </div>
     </div>
@@ -53,6 +64,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="/js/swiperpersonal.js"></script>
   <script src="/js/initcart.js"></script>
+  <script src="/js/validlogin.js"></script>
 </body>
 
 </html>
