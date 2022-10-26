@@ -1,5 +1,5 @@
 import mercadopago from "mercadopago";
-import NotificationService from "../services/NotificationService";
+import NotificationService from "../services/NotificationService.js";
 
 class NotificationController {
   async create(req, res) {
