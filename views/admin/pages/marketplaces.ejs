@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="chrome://branding/content/icon32.png" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/subnav.css">
+  <link rel="stylesheet" href="/css/admmarketpage.css">
+  <title>GameStore</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="dtc">
+      <%- include("../partials/inHeader.ejs"); -%>
+    </header>
+
+    <div class="subnav">
+      <ul>
+        <li>
+          <a href="/admin/marketplaces/entries">Solicitações</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h1>Marketplaces</h1>
+      <ul class="marketplaces">
+        <% for (var result of data) { %>
+          <li>
+            <div>
+              Empresa: <%= result.Desenvolvedora %><br />
+                CEO: <%= result.CEO %><br />
+                  Contato: <%= result.Contato %>
+            </div>
+
+            <div class="buttonsdiv">
+              <a class="del" href="/admin/marketplaces/delete/<%= result.ID %>">Excluir</a>
+            </div>
+          </li>
+          <% } %>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="dtc">
+    <%- include("../../store/partials/inFooter.ejs"); -%>
+  </footer>
+
+  <div class="modal"></div>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/responsive-menu.js"></script>
+  <script src="/js/resize.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/swiperpersonal.js"></script>
+
+  <script>
+
+    if (localStorage.meuArr) {
+      arr = JSON.parse(localStorage.getItem("meuArr"));
+      let numItens = arr.length;
+      let carticon = document.querySelector(".carticon span").innerHTML = numItens;
+      console.log("SPAN", carticon);
+    }
+
+  </script>
+</body>
+
+</html>
