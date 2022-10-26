@@ -3,7 +3,7 @@ counterCart();
 let btnFinalBuy = document.querySelector(".btnCartStartLogin");
 if (btnFinalBuy) {
   btnFinalBuy.addEventListener("click", () => {
-    window.location.href = "https://fangames.space/cart/login";
+    window.location.href = "http://localhost:3000/cart/login";
   });
 }
 
@@ -100,5 +100,7 @@ function counterCart() {
 }
 
 function btnCartOrder() {
+  localStorage.clear();
+  console.log("CLEAR STORAGE");
   let btnsub = document.querySelector(`[type="submit" ]`).click();
 }
