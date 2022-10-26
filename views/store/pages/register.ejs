@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/root.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/generalforms.css">
+  <link rel="stylesheet" href="css/valid.css">
   <title>GameStore</title>
 </head>
 
@@ -23,23 +24,43 @@
 
     <div class="registerForm">
       <div class="formBlock">
-        <form method="POST">
+        <form method="POST" id="formid">
           <h1>Registre-se na Gamestore</h1>
-          <div><label>Nome</label>
+
+          <div class="form-control">
+            <label>Nome</label>
             <input type="text" name="name" id="user_name" />
+            <i class="img-success"><img src="/img/success-icon.svg" alt=""></i>
+            <i class="img-error"><img src="/img/error-icon.svg" alt=""></i>
+            <small>Error Message</small>
           </div>
-          <div><label>Email</label>
+
+          <div class="form-control">
+            <label>Email</label>
             <input type="text" name="email" id="user_email" />
+            <i class="img-success"><img src="/img/success-icon.svg" alt=""></i>
+            <i class="img-error"><img src="/img/error-icon.svg" alt=""></i>
+            <small>Error Message</small>
           </div>
-          <div>
+
+          <div class="form-control">
             <label>Senha</label>
             <input type="password" name="password" id="user_password" />
+            <i class="img-success"><img src="/img/success-icon.svg" alt=""></i>
+            <i class="img-error"><img src="/img/error-icon.svg" alt=""></i>
+            <small>Error Message</small>
           </div>
-          <div>
+
+          <div class="form-control">
             <label>CPF</label>
             <input type="text" name="cpf" id="user_cpf" />
+            <i class="img-success"><img src="/img/success-icon.svg" alt=""></i>
+            <i class="img-error"><img src="/img/error-icon.svg" alt=""></i>
+            <small>Error Message</small>
           </div>
+
           <button class="btnsub">Registrar</button>
+
         </form>
       </div>
     </div>
@@ -58,6 +79,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="/js/swiperpersonal.js"></script>
   <script src="/js/initcart.js"></script>
+  <script src="/js/validuserregister.js"></script>
 </body>
 
 </html>
